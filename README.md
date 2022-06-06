@@ -73,10 +73,19 @@
  `tensorrt_infer`
 * 右键并重新生成对应的dll
 
+<div align="center">
+<img src="./images/8.png"  width = "800" />             </div>
+
+<div align="center">
+<img src="./images/9.png"  width = "800" />             </div>
+
+
+
+
 ## 3 创建一个C#项目并调用dll
 
 * 目前已经给出了C#项目，支持PaddleX PaddleClas PaddleDetection PaddleSeg的模型去预测，为了方便大家使用，提供了多线程、一键启动tensoRT等功能。
-* 用户只需要下载好C#工程 `inferdemo`运行.sln文件即可呈现如下文件形式：
+* 用户只需要下载好C#工程 `csharp`运行.sln文件即可呈现如下文件形式：
 
 
 
@@ -90,9 +99,10 @@
   - `paddle2onnx.dll`、`onnxruntime.dll`，位于`paddle_inference\third_party\install\paddle2onnx` `paddle_inference\third_party\install\onnxruntime`文件中
   - `OpenCvSharp.Extensions.dll` 位于`libs\opencvsharp453\NativeLib\x64`中，移动到`bin`目录下即可
 
+* 如下全部dll所需文件
 
-
-* 如下为加载模型预测方式
+<div align="center">
+<img src="./images/10.png"  width = "800" />             </div>
 
 ### 3.4 C#项目:可视化界面功能简要描述
 
@@ -106,13 +116,20 @@
        - paddlex的模型含有两个yml，其余套件导出只有一个yml/yaml
 - 4.支持一键启动TensorRT进行加速
 - 5.支持多线程调用。 
-
-
-
-
-
 <div align="center">
-<img src="./images/.png"  width = "800" />             </div>
+<img src="./images/11.png"  width = "800" />             </div>
+
+* 正常加载模型预测
+<div align="center">
+<img src="./images/12.png"  width = "800" />             </div>
+
+* 多线程预测
+<div align="center">
+<img src="./images/13.png"  width = "800" />             </div>
+
+* 开启TensorRT预测
+<div align="center">
+<img src="./images/14.png"  width = "800" />             </div>
 
 ### 3.6 C#项目模型推理/数据流向简要说明
 
